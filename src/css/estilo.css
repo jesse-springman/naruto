@@ -1,0 +1,106 @@
+body{
+    
+    color:#fff ;
+    overflow: hidden;
+}
+
+.personagens::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0.2)65%) no-repeat;
+}
+
+ .personagens .personagem{
+   display: none;
+   height: 100vh;
+   position: absolute;
+}
+
+.personagens .personagem.selecionado{
+  display: block;
+ 
+}
+
+.personagens .personagem .imagem{
+   width: 100vw;
+   height: 100%;
+   object-fit:cover ;
+   position: relative;
+   
+}
+
+.personagens .personagem .conteudo{
+position: absolute;
+top: 0;
+max-width: 400px;
+left: 120px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+min-height: 100vh;
+z-index: 1;
+
+}
+
+.personagens .personagem .conteudo .nome-personagem{
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+   
+}
+
+.personagens .personagem .conteudo .descricao{
+    font-family: "Rubik";
+    line-height: 24px;
+}
+
+
+.personagens .personagem .conteudo .logo{
+    background: url(../imagens/logo-na.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 330px;
+    margin-bottom: 35px;
+}
+
+.botoes{
+    position: absolute;
+    top: 0;
+    right: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   gap: 10px;
+   width: 180px;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao{
+    border: none;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 65px;
+}
+
+.botoes .botao .img-botao{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%; 
+}
+
+.botoes .botao.clicado{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #D9D9D9;
+    border-radius: 50%;
+    border: 3px solid darkgray;
+}
