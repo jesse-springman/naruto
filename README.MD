@@ -2,6 +2,9 @@
 
 Seleção de personagens do mundo de naruto, cada ícone é referente a um perosnagem diferente, contando um pouco de suas histórias e feitos. O usuario pode escolher qual deseja interagir.  
 
+
+<img src= "./src/imagens/naruto.gif">
+
 <img src= "./src/imagens/gifgit.gif">
 
 ## Tecnológias utilizadas 
